@@ -15,15 +15,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages =  "com.prowings")
 public class MyWebConfig {
 
-	@Bean
-	public InternalResourceViewResolver viewResolver() {
-		
-		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		
-		resolver.setPrefix("/WEB-INF/views/");
-		resolver.setSuffix(".jsp");
-		return resolver;
-	}
+	
 
 	public DriverManagerDataSource dataSource() {
 		

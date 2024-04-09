@@ -11,12 +11,12 @@ public class MyWebApplicationInitializer extends AbstractAnnotationConfigDispatc
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
- 		return null;
+ 		return new Class[] {MyWebConfig.class};
 	}
 
 	@Override
 	protected String[] getServletMappings() {
- 		return null;
+ 		return new String[] { "/" };
 	}
 
 }
